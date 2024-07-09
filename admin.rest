@@ -1,0 +1,32 @@
+POST http://localhost:3000/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "admin"
+}
+
+
+###
+
+
+POST http://localhost:3000/v1/admin/quiz
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2RhMWM5ZmZhZjMxZmE5YzE0NGQiLCJmdWxsTmFtZSI6IkFkbWluIFZpY3RvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIwNTMyNDMwfQ.z5y-a4YZtTVLp01eXX2NmnDohGtvN91nLa7yP-FUEtQ
+
+{
+    "questionNumber": "2",
+    "question": "A baby lion is called?",
+    "optionA": "Cob",
+    "optionB": "Baby lion",
+    "optionC": "Lioness",
+    "optionD": "Lion baby",
+    "correctOption": "optionA"
+}
+
+####
+
+GET http://localhost:3000/v1/admin/quiz/1/10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2RhMWM5ZmZhZjMxZmE5YzE0NGQiLCJmdWxsTmFtZSI6IkFkbWluIFZpY3RvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIwNTMyNDMwfQ.z5y-a4YZtTVLp01eXX2NmnDohGtvN91nLa7yP-FUEtQ
+

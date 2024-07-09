@@ -1,0 +1,47 @@
+POST http://localhost:3000/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "ukokjnr@gmail.com",
+    "password": "ukokjnr"
+}
+
+
+###
+
+GET http://localhost:3000/v1/users/quiz/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2I1MTVjMmM3MGYwZGExYmUyNDMiLCJmdWxsTmFtZSI6IlVzZXIgVmljdG9yIiwiZW1haWwiOiJ1a29ram5yQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIwNTM0MzM0fQ.sPSN4uBELPaLOBJaoTj1kzl2NOGEgxhzbw6RpsqSGg0
+
+###
+
+GET http://localhost:3000/v1/users/unanswered-question-numbers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2I1MTVjMmM3MGYwZGExYmUyNDMiLCJmdWxsTmFtZSI6IlVzZXIgVmljdG9yIiwiZW1haWwiOiJ1a29ram5yQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIwNTM0MzM0fQ.sPSN4uBELPaLOBJaoTj1kzl2NOGEgxhzbw6RpsqSGg0
+
+
+###
+
+POST http://localhost:3000/v1/users/answer-a-question
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2I1MTVjMmM3MGYwZGExYmUyNDMiLCJmdWxsTmFtZSI6IlVzZXIgVmljdG9yIiwiZW1haWwiOiJ1a29ram5yQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIwNTM0MzM0fQ.sPSN4uBELPaLOBJaoTj1kzl2NOGEgxhzbw6RpsqSGg0
+
+{
+    "quiz": "668d421c5e36d76c64440f91",
+    "optionChosen": "optionA"
+}
+
+###
+
+
+POST http://localhost:3000/v1/users/mark-quiz
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2I1MTVjMmM3MGYwZGExYmUyNDMiLCJmdWxsTmFtZSI6IlVzZXIgVmljdG9yIiwiZW1haWwiOiJ1a29ram5yQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIwNTM0MzM0fQ.sPSN4uBELPaLOBJaoTj1kzl2NOGEgxhzbw6RpsqSGg0
+
+
+###
+
+GET http://localhost:3000/v1/users/quiz-history
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhkM2I1MTVjMmM3MGYwZGExYmUyNDMiLCJmdWxsTmFtZSI6IlVzZXIgVmljdG9yIiwiZW1haWwiOiJ1a29ram5yQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIwNTM0MzM0fQ.sPSN4uBELPaLOBJaoTj1kzl2NOGEgxhzbw6RpsqSGg0
+
