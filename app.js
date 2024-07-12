@@ -13,7 +13,7 @@ var authRouter = require('./routes/auth');
 var app = express();
 
 
-mongoose.connect("mongodb://localhost:27017/quiz_game")
+mongoose.connect(process.env.DB)
 .then(() => {
   console.log("Conected to db");
 })
