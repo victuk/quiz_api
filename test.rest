@@ -1,8 +1,8 @@
-POST http://localhost:3000/v1/auth/register
+POST https://quiz-api-uurj.onrender.com/v1/auth/register
 Content-Type: application/json
 
 {
     "fullName": "Admin Victor",
-    "email": "admin@admin.com",
-    "password": "admin"
+    "email": "adminvictor@gmail.com",
+    "password": "victorukok"
 }
