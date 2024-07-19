@@ -56,7 +56,7 @@ router.get("/unanswered-question-numbers", async function (req, res, next) {
     const unansweredQuestions = [];
 
     for (let i = 1; i <= totalQuestions; i++) {
-      if(answeredNumber.includes(i)) {
+      if(answeredNumber.ncludes(i)) {
         unansweredQuestions.push({
           questionNumber: i,
           state: "answered"

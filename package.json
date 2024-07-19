@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "serve": "node ./bin/www",
-    "testAuth": "jest ./tests/authTest.test"
+    "testAuth": "jest ./tests/authTest.test",
+    "testAdmin": "jest ./tests/admin.test",
+    "testUser": "jest ./tests/user.test"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

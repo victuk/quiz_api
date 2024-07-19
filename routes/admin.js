@@ -25,7 +25,7 @@ router.get("/quiz/:page/:limit", async function (req, res, next) {
 
   const quizList = await quizModel.paginate({}, { page, limit });
 
-  res.status(201).send({
+  res.status(200).send({
     quizList
   });
 });
@@ -36,7 +36,7 @@ router.get("/quiz-by-id/:id", async function (req, res, next) {
 
   const quiz = await quizModel.findById(id);
 
-  res.status(201).send({
+  res.status(200).send({
     quiz
   });
 });

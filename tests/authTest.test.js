@@ -77,5 +77,5 @@ describe("This set of code is going to test register and login for both admins a
         expect(response.body.userDetails.role).toBe("admin");
 
     });
-
 });
+
