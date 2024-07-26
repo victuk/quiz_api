@@ -6,3 +6,24 @@ Content-Type: application/json
     "email": "adminvictor@gmail.com",
     "password": "victorukok"
 }
+
+###
+
+POST http://localhost:3000/v1/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "James",
+    "email": "userjames@gmail.com",
+    "password": "userjames"
+}
+
+###
+
+POST http://localhost:3000/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "userjames@gmail.com",
+    "password": "userjames"
+}

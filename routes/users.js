@@ -11,6 +11,17 @@ router.use(verifyAuth);
 
 router.use(rolesAllowed(["user"]));
 
+
+router.get("/emit-an-event", (req, res) => {
+  try {
+    req.io.to(req.userDetails.userId).emit("sample", "Hello, this is an event fired from the 'emit-an-event' endpoint. This event is for " + req.userDetails.fullName);
+    res.send("Event emitted");
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
 router.get('/quiz/:questionNumber', async function (req, res, next) {
 
   const { questionNumber } = req.params;
